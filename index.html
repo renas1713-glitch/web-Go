@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تصميم مواقع ومتاجر إلكترونية احترافية</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-code"></i>
+                <span>ويب برو</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#features">مميزاتنا</a></li>
+                <li><a href="#portfolio">أعمالنا</a></li>
+                <li><a href="#contact" class="btn-nav">تواصل معنا</a></li>
+                <li class="lang-selector">
+                    <i class="fas fa-globe"></i>
+                    <select id="langSelect" onchange="switchLanguage(this.value)">
+                        <option value="ar">العربية</option>
+                        <option value="de">Deutsch</option>
+                        <option value="en">English</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">🚀 نحول أفكارك إلى واقع رقمي</div>
+                <h1>تصميم مواقع ومتاجر<br><span class="gradient-text">إلكترونية احترافية</span></h1>
+                <p>نصمم مواقع إلكترونية احترافية ومتاجر إلكترونية متكاملة بشكل تقني، سريع، ومتوافق مع جميع الأجهزة</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        ابدأ مشروعك الآن
+                    </a>
+                    <a href="#portfolio" class="btn btn-secondary">
+                        <i class="fas fa-eye"></i>
+                        شاهد أعمالنا
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">150+</span>
+                        <span class="stat-label">مشروع منجز</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">رضا العملاء</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5+</span>
+                        <span class="stat-label">سنوات خبرة</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="devices-container">
+                    <!-- Laptop -->
+                    <div class="device laptop">
+                        <div class="device-frame">
+                            <div class="device-screen">
+                                <div class="device-header"><span></span><span></span><span></span></div>
+                                <div class="device-slideshow">
+                                    <div class="slide active"
+                                        style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><i
+                                            class="fas fa-store"></i></div>
+                                    <div class="slide"
+                                        style="background: linear-gradient(135deg, #ff6b35 0%, #f7c59f 100%);"><i
+                                            class="fas fa-utensils"></i></div>
+                                    <div class="slide"
+                                        style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"><i
+                                            class="fas fa-building"></i></div>
+                                    <div class="slide"
+                                        style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"><i
+                                            class="fas fa-graduation-cap"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="laptop-base"></div>
+                        <span class="device-label">💻 Laptop</span>
+                    </div>
+                    <!-- Tablet -->
+                    <div class="device tablet">
+                        <div class="device-frame">
+                            <div class="device-screen">
+                                <div class="device-slideshow">
+                                    <div class="slide active"
+                                        style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><i
+                                            class="fas fa-store"></i></div>
+                                    <div class="slide"
+                                        style="background: linear-gradient(135deg, #ff6b35 0%, #f7c59f 100%);"><i
+                                            class="fas fa-utensils"></i></div>
+                                    <div class="slide"
+                                        style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"><i
+                                            class="fas fa-building"></i></div>
+                                    <div class="slide"
+                                        style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"><i
+                                            class="fas fa-graduation-cap"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="device-label">📱 Tablet</span>
+                    </div>
+                    <!-- Phone -->
+                    <div class="device phone">
+                        <div class="device-frame">
+                            <div class="device-notch"></div>
+                            <div class="device-screen">
+                                <div class="device-slideshow">
+                                    <div class="slide active"
+                                        style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><i
+                                            class="fas fa-store"></i></div>
+                                    <div class="slide"
+                                        style="background: linear-gradient(135deg, #ff6b35 0%, #f7c59f 100%);"><i
+                                            class="fas fa-utensils"></i></div>
+                                    <div class="slide"
+                                        style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);"><i
+                                            class="fas fa-building"></i></div>
+                                    <div class="slide"
+                                        style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);"><i
+                                            class="fas fa-graduation-cap"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                        <span class="device-label">📲 Handy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">خدماتنا</span>
+                <h2>حلول رقمية متكاملة</h2>
+                <p>نقدم مجموعة شاملة من الخدمات لتلبية جميع احتياجاتك الرقمية</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>تصميم المواقع</h3>
+                    <p>مواقع عصرية وجذابة تعكس هوية علامتك التجارية بأحدث التقنيات</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> تصميم متجاوب</li>
+                        <li><i class="fas fa-check"></i> سرعة تحميل عالية</li>
+                        <li><i class="fas fa-check"></i> تحسين محركات البحث</li>
+                    </ul>
+                </div>
+                <div class="service-card featured">
+                    <div class="featured-badge">الأكثر طلباً</div>
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>المتاجر الإلكترونية</h3>
+                    <p>متاجر إلكترونية متكاملة تزيد مبيعاتك وتوسع نطاق عملك</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> إدارة المنتجات</li>
+                        <li><i class="fas fa-check"></i> بوابات دفع آمنة</li>
+                        <li><i class="fas fa-check"></i> تتبع الطلبات</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3>الهوية البصرية</h3>
+                    <p>تصميم شعارات وهويات بصرية مميزة تعبر عن رسالتك</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> تصميم الشعار</li>
+                        <li><i class="fas fa-check"></i> دليل الألوان</li>
+                        <li><i class="fas fa-check"></i> القرطاسية</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>تطبيقات الجوال</h3>
+                    <p>تطبيقات ذكية لنظامي iOS و Android بتجربة مستخدم رائعة</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> واجهة سهلة</li>
+                        <li><i class="fas fa-check"></i> أداء سلس</li>
+                        <li><i class="fas fa-check"></i> إشعارات فورية</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">لماذا نحن؟</span>
+                <h2>مميزات تجعلنا خيارك الأول</h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h4>تصميم عصري</h4>
+                    <p>تصاميم حديثة تواكب أحدث الاتجاهات العالمية</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h4>سرعة فائقة</h4>
+                    <p>مواقع سريعة التحميل لتجربة مستخدم مثالية</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h4>أمان متقدم</h4>
+                    <p>حماية SSL وتأمين كامل لموقعك وبيانات عملائك</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>دعم فني 24/7</h4>
+                    <p>فريق دعم متواجد دائماً لحل أي مشكلة</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h4>SEO محترف</h4>
+                    <p>تحسين موقعك للظهور في نتائج البحث الأولى</p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h4>تحديثات مستمرة</h4>
+                    <p>صيانة وتحديثات دورية للحفاظ على أداء موقعك</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">أعمالنا</span>
+                <h2>مشاريع نفخر بها</h2>
+                <p>نماذج من أحدث أعمالنا التي نفذناها لعملائنا</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>متجر إلكتروني للأزياء</h4>
+                        <p>متجر متكامل مع بوابات دفع متعددة</p>
+                    </div>
+                </div>
+                <div class="portfolio-item featured-project">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #ff6b35 0%, #f7c59f 100%);">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <span class="project-badge">مشروع مميز</span>
+                        <h4>مطعم Roj</h4>
+                        <p>موقع مطعم فاخر مع نظام حجوزات وقائمة طعام تفاعلية</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>موقع شركة عقارية</h4>
+                        <p>عرض العقارات مع خرائط تفاعلية</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="portfolio-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="portfolio-info">
+                        <h4>منصة تعليمية</h4>
+                        <p>نظام دورات ومحتوى تفاعلي</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>جاهز لبدء مشروعك؟</h2>
+                <p>تواصل معنا الآن واحصل على استشارة مجانية</p>
+                <a href="#contact" class="btn btn-white">
+                    <i class="fas fa-paper-plane"></i>
+                    ابدأ الآن
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">تواصل معنا</span>
+                <h2>دعنا نبدأ العمل فوراً</h2>
+                <p>أخبرنا عن مشروعك وسنتواصل معك في أقرب وقت</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <p>renas1713@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>الهاتف</h4>
+                            <p dir="ltr">+49 176 84985236</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div>
+                            <h4>واتساب</h4>
+                            <a href="https://wa.me/4917684985236" style="color: #25d366;">+49 176 84985236</a>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" placeholder="الاسم الكامل" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="البريد الإلكتروني" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="رقم الهاتف">
+                    </div>
+                    <div class="form-group">
+                        <select>
+                            <option value="">نوع الخدمة المطلوبة</option>
+                            <option value="website">تصميم موقع</option>
+                            <option value="ecommerce">متجر إلكتروني</option>
+                            <option value="app">تطبيق جوال</option>
+                            <option value="branding">هوية بصرية</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="أخبرنا عن مشروعك..." rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-paper-plane"></i>
+                        أرسل طلبك
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-code"></i>
+                        <span>ويب برو</span>
+                    </div>
+                    <p>نحول أفكارك إلى مواقع ناجحة واحترافية</p>
+                </div>
+                <div class="footer-links">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="#portfolio">أعمالنا</a></li>
+                        <li><a href="#contact">تواصل معنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-services">
+                    <h4>خدماتنا</h4>
+                    <ul>
+                        <li><a href="#">تصميم المواقع</a></li>
+                        <li><a href="#">المتاجر الإلكترونية</a></li>
+                        <li><a href="#">تطبيقات الجوال</a></li>
+                        <li><a href="#">الهوية البصرية</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2024 ويب برو - جميع الحقوق محفوظة</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
